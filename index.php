@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>Tsumiアゲ</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
             <?php
                 if(empty($_SESSION['user_id'])){
             ?>
-                <li><a href="signup.php">新規登録</a></li>
+                <li><a href="signup.php" style="border:1px solid white;">新規登録</a></li>
             <?php
                 }else{
             ?>
@@ -28,8 +29,15 @@
         </nav>
         </div>
     </header>
+    <section>
+      <div class ="top-picture">
+        <h1>これからの積み上げを記録していきませんか？</h1>
+        <input type="button" value="ログイン" id ="login_button">
+        <p>積み上げを記録することでモチベーションの向上などに繋がります。</p>
+      </div>
+    </section>
     <footer id="footer">
-      Copyright <a href="#">Tsumiアゲサポートセンター</a>. All Rights Reserved.
+      Copyright <a href="#">Tsumiアゲサポートセンター</a>. All Rights Reserved.<a href="https://stories.freepik.com/data">Illustration by Freepik Stories</a>
     </footer>
     
     <script src="js/vendor/jquery-2.2.2.min.js"></script>

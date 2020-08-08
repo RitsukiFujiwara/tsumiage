@@ -1,15 +1,19 @@
 <?php
-$siteTitle = "ログイン";
+
+?>
+
+<?php
+$siteTitle = "新規登録";
 require('head.php');
 ?>
 <?php
 require('header.php');
 ?>
 
-<body class="signin">
+<body class="signup">
     <section class="form-container">
     <form action="" method="post">
-        <h2 class="title">ログイン</h2>
+        <h2 class="title">新規登録</h2>
         <!-- 未記入あり -->
         <div class="area-msg">
         </div>
@@ -24,10 +28,10 @@ require('header.php');
         </label>
 
         <label>
-             <input type="checkbox" name="pass_save">次回以降のログイン省略
+             <input type="password" name="pass_re" placeholder="パスワード(再入力)">
            </label>
             <div class="btn-container">
-              <input type="submit" class="btn btn-mid" value="ログイン">
+              <input type="submit" class="btn btn-mid" value="登録">
             </div>
             <a href="passRemindSend.php">パスワードを忘れた方はコチラ</a>
     </form>

@@ -1,162 +1,292 @@
 body {
-    margin: 0;
-    padding: 0;
-    color: #444;
-    line-height: 150%;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-  }
-  
-  h1,h2,h3,h4,h5,h6,p{
-    margin: 0;
-    padding: 0;
-  }
-  
-  /*========================================
-    リンク
-  ========================================*/
-  
-  a,
-  a:active,
-  a:focus {
-    color: white;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-  /*========================================
-    フォント
-  ========================================*/
-  .num {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .price {
-    display: block;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-  }
-  /*トップバナー*/
-  
-  #top-baner {
-    width: 100%;
-  }
-  /*========================================
-    ヘッダー
-  ========================================*/
-  header {
-    margin-bottom: 30px;
-    width: 100%;
-    height: 80px;
-    background: #8BC8FC;
-  }
-  
-  header h1 {
-    float: left;
-    margin: 0;
-    padding-left: 15px;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 80px;
-  }
-  
-  header h1 a {
-    color: #ffff;
-    text-decoration: none;
-    opacity: 0.5;
-  }
-  /*========================================
-    ナビゲーション
-  ========================================*/
-  #top-nav {
-    position: relative;
-    float: right;
-    width: 500px;
-    height: 90px;
-  }
-  
-  nav a {
-    padding: 10px 15px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  nav a:hover {
-    opacity: 0.5;
-    text-decoration: underline;
-  }
-  
-  #top-nav ul {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    width: 450px;
-    height: 80px;
-    list-style: none;
-    line-height: 80px;
-  }
-  
-  #top-nav ul li {
-    float: right;
-    margin-right: 50px;
-  }
- 
-  
-  footer {
-    padding: 15px;
-    width: 100%;
-    background: #8BC8FC;
-    color: #f6f5f5;
-    text-align: center;
-    font-size: 12px;
-  }
-  
-  footer a {
-    color: #f6f5f5;
-  }
-  .top-picture{
-      width: 100%;
-      height: 553px;
-      position: relative;
-      background-image: url(img/top-picture.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-  }
-  .top-picture h1{
-    position: absolute;
-    top: 100px;
-    right: 50px;
-  }
-  #login_button{
-    text-align: center;
-    line-height: 40px;
-    position: absolute;
-    top: 150px;
-    right: 200px;
-    width:200px;
-    height: 40px;
-    background: #8BC8FC;
-    box-shadow: 2px 2px 4px gray;
-    transition: all 0.3s;
-  }
-  #login_button a{
-    text-decoration: none;
-  }
-  #login_button:hover{
-    cursor: pointer;
-    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.25);
-    transform: translateY(-0.1em);
-  }
-  .top-picture p{
-    position: absolute;
-    top: 200px;
-    right: 50px;
-  }
+  margin: 0;
+  padding: 0;
+  color: #444;
+  line-height: 150%;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
 
-  .site-half{
-    width: 25%;
-  }
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
+
+/*========================================
+  リンク
+========================================*/
+
+a,
+a:active,
+a:focus {
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+}
+/*========================================
+  フォント
+========================================*/
+.num {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.price {
+  display: block;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+/*トップバナー*/
+
+#top-baner {
+  width: 100%;
+}
+/*========================================
+  ヘッダー
+========================================*/
+header {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 80px;
+  background: #8BC8FC;
+}
+
+header h1 {
+  float: left;
+  margin: 0;
+  padding-left: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 80px;
+}
+
+header h1 a {
+  color: #ffff;
+  text-decoration: none;
+}
+/*========================================
+  ナビゲーション
+========================================*/
+#top-nav {
+  position: relative;
+  float: right;
+  width: 500px;
+  height: 90px;
+}
+
+nav a {
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover {
+  opacity: 0.5;
+  text-decoration: underline;
+}
+
+#top-nav ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  width: 450px;
+  height: 80px;
+  list-style: none;
+  line-height: 80px;
+}
+
+#top-nav ul li {
+  float: right;
+  margin-right: 50px;
+}
+
+
+footer {
+  padding: 15px 0px;
+  width: 100%;
+  background: #8BC8FC;
+  color: #f6f5f5;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer a {
+  color: #f6f5f5;
+}
+.top-picture{
+    width: 100%;
+    height: 598px;
+    position: relative;
+    background-image: url(img/top-picture.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.top-picture h1{
+  position: absolute;
+  top: 100px;
+  right: 50px;
+}
+#login_button{
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 150px;
+  right: 200px;
+  width:200px;
+  height: 40px;
+  background: #8BC8FC;
+  box-shadow: 2px 2px 4px gray;
+  transition: all 0.3s;
+}
+#login_button a{
+  text-decoration: none;
+  padding: 50px;
+}
+#login_button:hover{
+  cursor: pointer;
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.1em);
+}
+.top-picture p{
+  position: absolute;
+  top: 200px;
+  right: 50px;
+}
+
+.site-half{
+  width: 25%;
+}
+
+
+/*========================================
+  ログイン
+========================================*/
+.signup{
+  background-image: url(img/bg_img2.png);
+  background-size:contain;
+  width:100%;
+  height:500px;
+  background-repeat: no-repeat;
+  background-position:right bottom;
+}
+.signin{
+  background-image: url(img/bgimg_1.png);
+  background-size:contain;
+  width:100%;
+  height:500px;
+  background-repeat: no-repeat;
+  background-position:right bottom;
+}
+section.form-container{
+  width: 25%;
+  height: 505px;
+}
+h2.title{
+  margin-top: 120px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+label{
+  display: block;
+  margin-bottom: 10px;
+}
+label.err input, label.err select{
+  background: #f7dcd9;
+}
+input[type="text"], input[type="password"], input[type="number"], .form select,
+textarea {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  height: 60px;
+  border: none;
+  background: #f6f5f5;
+  font-size: 18px;
+}
+input[type="checkbox"]{
+  width: 18px;
+  height: 18px;
+  background: #f6f5f5;
+  vertical-align: middle;
+}
+input[type="number"] {
+  width: 100px;
+  text-align: left;
+}
+input[type="submit"] {
+  margin: 15px 0;
+  padding: 15px 30px;
+  width: 100%;
+  border: none;
+  background: #8BC8FC;
+  color: white;
+  font-size: 14px;
+}
+
+select:hover,
+input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.form-container {
+  margin: 0 auto;
+}
+.page-1colum .form-container{
+  margin: 0px auto;
+}
+
+.form {
+  margin: 0 auto;
+  margin-bottom: 170px;
+  padding: 30px;
+  width: 400px;
+  border: 5px solid #b4a574;
+  position: relative;
+  top: 100px;
+}
+.form .label-require{
+  margin-left: 5px;
+  background: #fe8a8b;
+  font-size: 14px;
+  padding: 3px 5px;
+  color: white;
+  vertical-align: bottom;
+}
+.page-logined .form{
+  border: none;
+}
+
+.form .title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 38px;
+  font-family: cursive;
+}
+.form .area-msg{
+  padding: 0 0 15px 0;
+  color: red;
+}
+
+.form .btn-container {
+  overflow: hidden;
+}
+
+.form .btn {
+  float: right;
+}
+.form a{
+  text-decoration: none;
+  color: #b4a574;
+}
+.form a:hover{
+  text-decoration: underline;
+  opacity: 0.5;
+}

@@ -1,6 +1,6 @@
 <?php
-require('head.php');
 $siteTitle = 'ホーム';
+require('head.php');
 ?>
 <?php
 require('header.php');

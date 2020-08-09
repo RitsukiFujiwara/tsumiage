@@ -270,7 +270,7 @@ input[type="submit"]:hover {
   font-size: 38px;
   font-family: cursive;
 }
-.form .area-msg{
+.area-msg{
   padding: 0 0 15px 0;
   color: red;
 }

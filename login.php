@@ -11,18 +11,11 @@ require('header.php');
     <form action="" method="post">
         <h2 class="title">ログイン</h2>
         <!-- 未記入あり -->
-        <div class="area-msg">
-        </div>
-        <label class="">
-            <input type="text" name="email" placeholder="メールアドレス" value="">
-        </label>
+        <span class="area-msg" style="color:red;"><?php if(!empty($err_msg['email'])) echo $err_msg['email']; ?></span>
+        <input type="text" name="email" placeholder="メールアドレス" value="">
         <!-- 未記入あり -->
-        <div class="area-msg">
-        </div>
-        <label class="">
+        <span class="area-msg" style="color:red;"><?php if(!empty($err_msg['pass'])) echo $err_msg['pass']; ?></span>
             <input type="password" name="pass" placeholder="パスワード" value="">
-        </label>
-
         <label>
              <input type="checkbox" name="pass_save">次回以降のログイン省略
            </label>

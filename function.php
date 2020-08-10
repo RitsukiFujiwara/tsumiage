@@ -83,11 +83,11 @@ $err_msg = array();
 // バリデーション関数
 //================================
 function validRequired($str,$key){
-    if(!preg_match("/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/", $str)){
+    if($str === ''){ //金額フォームなどを考えると数値の０はOKにし、空文字はダメにする
         global $err_msg;
         $err_msg[$key] = MSG01;
+      }
     }
-}
 function validEmail($str,$key){
     if(!preg_match("/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/", $str)){
         global $err_msg;

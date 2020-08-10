@@ -41,7 +41,7 @@ if(!empty($_POST)){
               $_SESSION['login_date'] = time();
               $_SESSION['login_limit'] = $sesLimit;
 
-              $_SESSION['user_id'] = $dbh->lastInsetId();
+              $_SESSION['user_id'] = $dbh->lastInsertId();
               debug('セッション変数の中身：'.print_r($_SESSION,true));
               header("Location:index.php");
           }

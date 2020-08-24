@@ -33,7 +33,7 @@ $dbFormData = getUser($_SESSION['user_id']);
   <a href="tranSale.php"><i class="far fa-handshake"></i>  合トレ履歴</a>
   <a href="profEdit.php"><i class="fas fa-id-card"></i>  プロフィールを編集</a>
   <a href="passEdit.php"><i class="fas fa-key"></i>  パスワード変更</a>
-  <a href="withdraw.php"><i class="fas fa-sign-out-alt"></i>  退会</a>
+  <a href="withdraw.php"><i class="fas fa-sign-out-alt"></i> 退会</a>
   <div class="userinfo">
     <h2>ユーザー情報</h2>
     <p><?php echo getFormData('username')?></p>

@@ -25,6 +25,7 @@ $dbFormData = getUser($_SESSION['user_id']);
 }
 .userinfo p{
   text-align: center;
+  
 }
 
 </style>
